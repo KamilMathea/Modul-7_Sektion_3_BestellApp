@@ -1,0 +1,13 @@
+Sektionstrennung (orange)
+background: rgba(231, 108, 31, 1);
+background: #E76C1F;
+
+
+Meal Card
+background: rgba(253, 234, 220, 1);
+background: #FDEADC;
+
+
+Basket
+background: rgba(54, 53, 52, 1);
+background: #363534;
