@@ -1,0 +1,26 @@
+function getHeadlineTemplate(i) {
+    return `
+    <div class="category_header">
+        <img src="${myDishes[i].categoryImg}" alt="${myDishes[i].category}">
+        <h2>${myDishes[i].categoryHeadline}</h2>
+    </div>
+    `;
+}
+
+function getDishTemplate(i, j) {
+    return `
+    <div class="dishes_container">
+        <div class="dish_img_left">
+            <img src="${myDishes[i].dishes[j].img}" alt="${myDishes[i].dishes[j].name}">
+            <div class="dish_description">
+                <h3>${myDishes[i].dishes[j].name}</h3>
+                <p>${myDishes[i].dishes[j].description}</p>
+                <div class="price_and_button">
+                    <span>${myDishes[i].dishes[j].price.toFixed(2)} €</span>
+                    <button onclick="addToCart(${i}, ${j})">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    `;
+}
