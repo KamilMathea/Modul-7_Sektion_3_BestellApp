@@ -6,16 +6,15 @@ header {
     background-color: #E76C1F;
     padding: 10px 0;
     width: 100%;
-    bottom: 0;
 }
 
 .nav_container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 .burger-menu {
@@ -33,4 +32,9 @@ header {
   background-color: black;
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
 }
