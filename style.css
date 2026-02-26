@@ -130,3 +130,22 @@ main {
     min-width: 100px;
     gap: 32px;
 }
+
+footer {
+    background-color: #E76C1F;
+    padding: 24px 0;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
