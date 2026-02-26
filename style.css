@@ -114,3 +114,11 @@ main {
     object-fit: cover;
     border-radius: 8px;
 }
+
+.dish_description {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 32px;
+    gap: 16px;
+}
