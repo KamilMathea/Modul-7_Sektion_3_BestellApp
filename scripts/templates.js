@@ -18,7 +18,7 @@ function getDishTemplate(i, j) {
             <p>${myDishes[i].dishes[j].description}</p>
         </div>
         <div class="price_and_button">
-            <span>${myDishes[i].dishes[j].price.toFixed(2)} €</span>
+            <span><strong>${myDishes[i].dishes[j].price.toFixed(2)} €</strong></span>
             <button onclick="addToCart(${i}, ${j})">Add</button>
         </div>
     </div>

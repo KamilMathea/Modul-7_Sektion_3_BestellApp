@@ -98,6 +98,15 @@ main {
     background-color: #E76C1F;
 }
 
+.category_header h2 {
+    color: white;
+}
+
+.category_header img {
+    width: 80px;
+    height: 80px;
+}
+
 .dishes_container {
     display: flex;
     align-items: center;
@@ -109,8 +118,8 @@ main {
 }
 
 .dish_img_left img {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 125px;
     object-fit: cover;
     border-radius: 8px;
 }
