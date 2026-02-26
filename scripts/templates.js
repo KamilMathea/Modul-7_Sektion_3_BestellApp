@@ -12,14 +12,14 @@ function getDishTemplate(i, j) {
     <div class="dishes_container">
         <div class="dish_img_left">
             <img src="${myDishes[i].dishes[j].img}" alt="${myDishes[i].dishes[j].name}">
-            <div class="dish_description">
-                <h3>${myDishes[i].dishes[j].name}</h3>
-                <p>${myDishes[i].dishes[j].description}</p>
-                <div class="price_and_button">
-                    <span>${myDishes[i].dishes[j].price.toFixed(2)} €</span>
-                    <button onclick="addToCart(${i}, ${j})">Add</button>
-                </div>
-            </div>
+        </div>
+        <div class="dish_description">
+            <h3>${myDishes[i].dishes[j].name}</h3>
+            <p>${myDishes[i].dishes[j].description}</p>
+        </div>
+        <div class="price_and_button">
+            <span>${myDishes[i].dishes[j].price.toFixed(2)} €</span>
+            <button onclick="addToCart(${i}, ${j})">Add</button>
         </div>
     </div>
     `;
