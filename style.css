@@ -89,3 +89,11 @@ main {
     margin-top: 8px;
     text-align: center;
 }
+
+.category_header {
+    display: flex;
+    align-items: center;
+    padding: 8px 64px;
+    gap: 32px;
+    background-color: #E76C1F;
+}
