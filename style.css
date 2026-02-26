@@ -97,3 +97,20 @@ main {
     gap: 32px;
     background-color: #E76C1F;
 }
+
+.dishes_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background-color: #FDEADC;
+    margin: 32px 80px;
+    border-radius: 8px;
+}
+
+.dish_img_left img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
