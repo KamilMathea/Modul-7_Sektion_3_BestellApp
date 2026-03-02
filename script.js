@@ -1,3 +1,7 @@
+let basketNames = [];
+let basketPrices = [];
+let basketAmounts = [];
+
 function init() {
     renderMenuContent();
 }
@@ -15,3 +19,22 @@ function renderMenuContent() {
         }
     }
 }
+
+function addToCart(i, j) {
+    let dishName = myDishes[i].dishes[j].name;
+    let dishPrice = myDishes[i].dishes[j].price;
+
+    for (let k = 0; k < basketNames.length; k++) {
+        if (basketNames[k] === dishName) {
+            basketAmounts[k]++;
+            renderCartContent();
+            return;
+        }
+    }
+
+    basketNames.push(dishName);
+    basketPrices.push(dishPrice);
+    basketAmounts.push(1);
+    renderCartContent();
+}
+
