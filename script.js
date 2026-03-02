@@ -40,13 +40,22 @@ function addToCart(i, j) {
 
 function renderCartContent() {
     let cartContent = document.getElementById("basket_items");
-    cartContent.innerHTML = "";
-    let totalPrice = 0;
+    let cartFooter = document.getElementById("basket_footer");
 
-    for (let i = 0; i < basketNames.length; i++) {
-        cartContent.innerHTML += getBasketItemTemplate(i);
-        totalPrice += basketPrices[i] * basketAmounts[i];
+    if (basketNames.length === 0) {
+        cartContent.innerHTML = "<p>Your basket is empty</p>";
+        cartFooter.innerHTML = "";
+        return;
     }
+    else {
+        cartContent.innerHTML = "";
+        let totalPrice = 0;
 
-    document.getElementById("basket_footer").innerHTML = getBasketTotalTemplate(totalPrice);
+        for (let i = 0; i < basketNames.length; i++) {
+            cartContent.innerHTML += getBasketItemTemplate(i);
+            totalPrice += basketPrices[i] * basketAmounts[i];
+        }
+
+        cartFooter.innerHTML = getBasketTotalTemplate(totalPrice);
+    }
 }
