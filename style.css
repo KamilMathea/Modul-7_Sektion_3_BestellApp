@@ -33,6 +33,13 @@ header {
 main {
     max-width: 1440px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.main_dishes_container {
+    width: calc(100% - 358px);
 }
 
 .hero_image_container img {
