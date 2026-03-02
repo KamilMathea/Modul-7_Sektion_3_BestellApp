@@ -24,3 +24,25 @@ function getDishTemplate(i, j) {
     </div>
     `;
 }
+
+function getBasketItemTemplate(i) {
+    return `
+        <div class="cart_item">
+            <div class="cart_item_info">
+                <span>${basketAmounts[i]} x ${basketNames[i]}</span>
+            </div>
+            <div class="cart_item_price">
+                <span>${(basketPrices[i] * basketAmounts[i]).toFixed(2)} €</span>
+            </div>
+        </div>
+    `;
+}
+
+function getBasketTotalTemplate(totalPrice) {
+    return `
+        <div class="cart_total">
+            <span>Total: </span>
+            <span><strong>${totalPrice.toFixed(2)} €</strong></span>
+        </div>
+    `;
+}
