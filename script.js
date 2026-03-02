@@ -68,6 +68,25 @@ function changeAmount(i, change) {
         basketNames.splice(i, 1);
         basketPrices.splice(i, 1);
     }
-    
+
     renderCartContent();
+}
+
+function checkout() {
+    basketNames = [];
+    basketPrices = [];
+    basketAmounts = [];
+
+    renderCartContent();
+
+    let successMessage = document.getElementById('order_success');
+    successMessage.classList.remove('d-none');
+
+    setTimeout(function () {
+        successMessage.classList.add('d-none');
+    }, 3000);
+}
+
+function closeSuccessMessage() {
+    document.getElementById('order_success').classList.add('d-none');
 }
