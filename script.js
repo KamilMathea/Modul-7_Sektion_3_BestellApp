@@ -59,3 +59,15 @@ function renderCartContent() {
         cartFooter.innerHTML = getBasketTotalTemplate(totalPrice);
     }
 }
+
+function changeAmount(i, change) {
+    basketAmounts[i] += change;
+
+    if (basketAmounts[i] <= 0) {
+        basketAmounts.splice(i, 1);
+        basketNames.splice(i, 1);
+        basketPrices.splice(i, 1);
+    }
+    
+    renderCartContent();
+}
