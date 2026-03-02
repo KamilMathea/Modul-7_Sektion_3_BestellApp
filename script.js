@@ -38,3 +38,15 @@ function addToCart(i, j) {
     renderCartContent();
 }
 
+function renderCartContent() {
+    let cartContent = document.getElementById("basket_items");
+    cartContent.innerHTML = "";
+    let totalPrice = 0;
+
+    for (let i = 0; i < basketNames.length; i++) {
+        cartContent.innerHTML += getBasketItemTemplate(i);
+        totalPrice += basketPrices[i] * basketAmounts[i];
+    }
+
+    document.getElementById("basket_footer").innerHTML = getBasketTotalTemplate(totalPrice);
+}
