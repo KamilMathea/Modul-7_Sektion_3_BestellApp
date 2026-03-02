@@ -43,8 +43,9 @@ function getBasketItemTemplate(i) {
 function getBasketTotalTemplate(totalPrice) {
     return `
         <div class="cart_total">
-            <span>Total: </span>
+            <span>Total </span>
             <span><strong>${totalPrice.toFixed(2)} €</strong></span>
         </div>
+        <button class="checkout_button" onclick="checkout()">Buy now (${totalPrice.toFixed(2)} €)</button>
     `;
 }
