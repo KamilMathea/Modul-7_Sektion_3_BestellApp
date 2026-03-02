@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./styles/menu.css">
+    <link rel="stylesheet" href="./styles/basket.css">
 </head>
 
 <body onload="init()">
@@ -26,30 +27,45 @@
         </div>
     </header>
     <main>
-        <section class="restaurant_header">
-            <div class="hero_image_container">
-                <img src="./assets/img/heroPhoto.jpg" alt="Essenbild">
-            </div>
-
-            <div class="hero_logo_container">
-                <img src="./assets/icons/logoBurger.svg" alt="BurgerHouse Logo">
-            </div>
-
-            <div class="restaurant_header_text">
-                <div class="headline_and_reviews">
-                    <h1><span>Burger</span>House</h1>
-                    <div class="reviews">
-                        <img src="./assets/icons/star.svg" alt="Star-Icon">
-                        <span><strong>4,3</strong> (345)</span>
-                    </div>
+        <section class="main_dishes_container">
+            <div class="restaurant_header">
+                <div class="hero_image_container">
+                    <img src="./assets/img/heroPhoto.jpg" alt="Essenbild">
                 </div>
-                <p><strong>The best of Burgers, Pizza and Greens, all in one great place.</strong></p>
 
+                <div class="hero_logo_container">
+                    <img src="./assets/icons/logoBurger.svg" alt="BurgerHouse Logo">
+                </div>
+
+                <div class="restaurant_header_text">
+                    <div class="headline_and_reviews">
+                        <h1><span>Burger</span>House</h1>
+                        <div class="reviews">
+                            <img src="./assets/icons/star.svg" alt="Star-Icon">
+                            <span><strong>4,3</strong> (345)</span>
+                        </div>
+                    </div>
+                    <p><strong>The best of Burgers, Pizza and Greens, all in one great place.</strong></p>
+
+                </div>
             </div>
-        </section>
-        <section id="menu_content">
+            <section id="menu_content">
 
+            </section>
         </section>
+
+        <aside id="basket" class="basket_wrapper">
+            <div class="basket_sticky_container">
+                <h2>Your Basket</h2>
+                <div id="basket_items">
+                    <p>your basket is empty</p>
+                </div>
+                <div id="basket_footer">
+
+                </div>
+            </div>
+
+        </aside>
     </main>
     <footer>
         <p>&copy; 2026 BurgerHouse. All rights reserved.</p>
