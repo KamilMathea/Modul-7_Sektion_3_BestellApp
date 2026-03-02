@@ -31,7 +31,9 @@ function getBasketItemTemplate(i) {
             <div class="cart_item_info">
                 <span>${basketAmounts[i]} x ${basketNames[i]}</span>
             </div>
-            <div class="cart_item_price">
+            <div class="cart_item_actions">
+                <button onclick="changeAmount(${i}, -1)"><strong>-</strong></button>
+                <button onclick="changeAmount(${i}, 1)"><strong>+</strong></button>
                 <span>${(basketPrices[i] * basketAmounts[i]).toFixed(2)} €</span>
             </div>
         </div>
