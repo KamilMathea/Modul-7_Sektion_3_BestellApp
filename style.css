@@ -1,3 +1,7 @@
+.d-none {
+    display: none !important;
+}
+
 header {
     background-color: #E76C1F;
     padding: 10px 0;
