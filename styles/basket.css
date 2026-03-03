@@ -17,6 +17,11 @@
     align-items: center;
 }
 
+.cart_item_actions {
+    display: flex;
+    justify-content: space-between;
+}
+
 .cart_item_change_amount {
     display: flex;
     align-items: center;
