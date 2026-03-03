@@ -47,3 +47,18 @@
     min-width: 100px;
     gap: 32px;
 }
+
+.price_and_button button {
+    background-color: #E76C1F;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.price_and_button button:hover {
+    background-color: #FACAAC;
+    color: #363534;
+    font-weight: bold;
+}
