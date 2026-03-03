@@ -53,6 +53,16 @@
     cursor: pointer;
 }
 
+.cart_total {
+    margin-top: auto;
+    font-size: 18px;
+    width: 300px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .success_overlay {
     position: fixed;
     top: 0;
