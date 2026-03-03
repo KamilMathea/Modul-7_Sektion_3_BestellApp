@@ -53,6 +53,11 @@
     cursor: pointer;
 }
 
+.cart_item_change_amount button:hover {
+    background-color: #363534;
+    color: #FDEADC;
+}
+
 #basket_footer {
     display: flex;
     flex-direction: column;
@@ -82,6 +87,11 @@ hr {
     cursor: pointer;
     font-weight: bold;
     font-size: 24px;
+}
+
+.checkout_button:hover {
+    background-color: #FACAAC;
+    color: #363534;
 }
 
 .success_overlay {
