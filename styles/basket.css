@@ -29,6 +29,7 @@
 .cart_item_actions {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 12px 0 0 0;
 }
 
@@ -36,6 +37,16 @@
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+.cart_item_change_amount button {
+    background-color: transparent;
+    border: 1px solid #363534;
+    color: #363534;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .success_overlay {
