@@ -53,6 +53,10 @@
     cursor: pointer;
 }
 
+hr {
+    margin: 16px 0 0 0;
+}
+
 .cart_total {
     margin-top: auto;
     font-size: 18px;

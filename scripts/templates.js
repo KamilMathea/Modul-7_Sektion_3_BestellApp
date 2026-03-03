@@ -44,6 +44,7 @@ function getBasketItemTemplate(i) {
 
 function getBasketTotalTemplate(totalPrice) {
     return `
+    <hr>
         <div class="cart_total">
             <span>Total </span>
             <span><strong>${totalPrice.toFixed(2)} €</strong></span>
