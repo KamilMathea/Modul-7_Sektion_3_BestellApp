@@ -17,6 +17,12 @@
     align-items: center;
 }
 
+.cart_item_change_amount {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
 .success_overlay {
     position: fixed;
     top: 0;
