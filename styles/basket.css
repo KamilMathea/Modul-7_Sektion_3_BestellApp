@@ -17,9 +17,19 @@
     align-items: center;
 }
 
+.cart_item {
+    width: 300px;
+    padding: 16px;
+    background-color: #FDEADC;
+    color: #363534;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
 .cart_item_actions {
     display: flex;
     justify-content: space-between;
+    padding: 12px 0 0 0;
 }
 
 .cart_item_change_amount {
