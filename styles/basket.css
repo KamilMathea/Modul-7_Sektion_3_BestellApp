@@ -67,6 +67,16 @@ hr {
     align-items: center;
 }
 
+.checkout_button {
+    margin-top: 16px;
+    padding: 12px 24px;
+    background-color: #E76C1F;
+    color: #FDEADC;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
 .success_overlay {
     position: fixed;
     top: 0;
