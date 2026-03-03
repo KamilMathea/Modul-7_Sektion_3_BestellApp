@@ -21,6 +21,26 @@
     margin: 16px 0;
 }
 
+#basket_items {
+    max-height: 320px;
+    width: 100%;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+#basket_items::-webkit-scrollbar {
+    width: 6px;
+}
+
+#basket_items::-webkit-scrollbar-thumb {
+    background-color: #E76C1F;
+    border-radius: 3px;
+}
+
+#basket_items::-webkit-scrollbar-thumb:hover {
+    background-color: #FACAAC;
+}
+
 .cart_item {
     width: 300px;
     padding: 16px;
