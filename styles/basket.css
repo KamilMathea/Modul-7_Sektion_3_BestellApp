@@ -19,6 +19,8 @@
 
 .basket_sticky_container h2 {
     margin: 16px 0;
+    display: flex;
+    justify-content: center;
 }
 
 #basket_items {
@@ -26,6 +28,9 @@
     width: 100%;
     overflow-y: auto;
     padding-right: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #basket_items::-webkit-scrollbar {
