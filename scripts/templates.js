@@ -26,14 +26,18 @@ function getDishTemplate(i, j) {
 }
 
 function getBasketItemTemplate(i) {
+    let minusOrTrash = basketAmounts[i] === 1 ? 
+    '<img src="./assets/icons/deleteOrange.svg" alt="Delete-Button">' : '-';
     return `
         <div class="cart_item">
             <div class="cart_item_info">
                 <span>${basketAmounts[i]} x ${basketNames[i]}</span>
+                <img src="./assets/icons/deleteBlack.svg" class="delete_all_icon" 
+                onclick="changeAmount(${i}, -${basketAmounts[i]})" alt="Delete-Button">
             </div>
             <div class="cart_item_actions">
             <div class="cart_item_change_amount">
-                <button onclick="changeAmount(${i}, -1)">-</button>
+                <button onclick="changeAmount(${i}, -1)">${minusOrTrash}</button>
                 <button onclick="changeAmount(${i}, 1)">+</button>
             </div>
                 <span>${(basketPrices[i] * basketAmounts[i]).toFixed(2)} €</span>
