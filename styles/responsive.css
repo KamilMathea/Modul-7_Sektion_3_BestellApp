@@ -19,3 +19,28 @@
         width: 260px;
     }
 }
+
+@media (max-width: 924px) {
+    .dishes_container {
+        flex-direction: column;
+        margin: 16px;
+    }
+
+    .dish_img_left img {
+        width: 300px;
+    }
+
+    .dish_description {
+        padding: 8px 0 16px 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .price_and_button {
+        gap: 16px;
+    }
+
+    .cart_total {
+        width: 260px;
+    }
+}
