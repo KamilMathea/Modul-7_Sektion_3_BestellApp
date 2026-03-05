@@ -1,0 +1,21 @@
+@media (max-width: 1024px) {
+    .main_dishes_container {
+        width: calc(100% - 308px);
+    }
+
+    .dish_description {
+        padding: 0 24px;
+    }
+
+    .basket_wrapper {
+        width: 300px;
+    }
+
+    .dishes_container {
+        margin: 32px;
+    }
+
+    .cart_item {
+        width: 260px;
+    }
+}
