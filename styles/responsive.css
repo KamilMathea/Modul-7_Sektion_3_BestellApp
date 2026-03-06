@@ -155,6 +155,14 @@
         width: 150px;
     }
 
+    .restaurant_header_text {
+        padding: 8px;
+    }
+
+    .headline_and_reviews {
+        gap: 16px;
+    }
+
     .dishes_container {
         max-width: 340px;
         margin: 8px auto;
