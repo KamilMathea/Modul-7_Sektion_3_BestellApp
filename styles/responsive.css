@@ -193,3 +193,22 @@
         height: 100px;
     }
 }
+
+@media (max-width: 375px) {
+    .dishes_container {
+        max-width: 280px;
+    }
+
+    .dish_img_left img {
+        width: 240px;
+        height: 80px;
+    }
+
+    .cart_item {
+        width: 240px;
+    }
+
+    .checkout_button {
+        padding: 12px 12px;
+    }
+}
