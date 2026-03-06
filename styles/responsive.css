@@ -140,3 +140,28 @@
         height: 50px;
     }
 }
+
+@media (max-width: 425px) {
+    .nav_container img {
+        height: 32px;
+        width: auto;
+    }
+
+    .hero_image_container img {
+        height: 300px;
+    }
+
+    .hero_logo_container img {
+        width: 150px;
+    }
+
+    .dishes_container {
+        max-width: 340px;
+        margin: 8px auto;
+        padding: 8px;
+    }
+
+    .dish_img_left img {
+        height: 100px;
+    }
+}
