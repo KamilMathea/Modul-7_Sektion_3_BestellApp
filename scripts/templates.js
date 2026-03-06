@@ -26,8 +26,8 @@ function getDishTemplate(i, j) {
 }
 
 function getBasketItemTemplate(i) {
-    let minusOrTrash = basketAmounts[i] === 1 ? 
-    '<img src="./assets/icons/deleteOrange.svg" alt="Delete-Button">' : '-';
+    let minusOrTrash = basketAmounts[i] === 1 ?
+        '<img src="./assets/icons/deleteOrange.svg" alt="Delete-Button">' : '-';
     return `
         <div class="cart_item">
             <div class="cart_item_info">
@@ -55,4 +55,34 @@ function getBasketTotalTemplate(totalPrice) {
         </div>
         <button class="checkout_button" onclick="checkout()">Buy now (${totalPrice.toFixed(2)} €)</button>
     `;
+}
+
+function getMobileNavTemplate(cartIcon, totalItems) {
+    let amountInCircle = "";
+    if (totalItems > 0) {
+        amountInCircle = `<span class="mobile_cart_badge">${totalItems}</span>`;
+    }
+
+    return `
+        <div class="nav_item">
+            <img src="./assets/icons/mobile_nav_home_white.svg" alt="Home Icon">
+            <span>Home</span>
+        </div>
+        <div class="nav_item">
+            <img src="./assets/icons/mobile_nav_person_white.svg" alt="Account Icon">
+            <span>Profile</span>
+        </div>
+        <div class="nav_item">
+            <img src="./assets/icons/mobile_nav_takeout_dining_white.svg" alt="Takeout Icon">
+            <span>Takeout</span>
+        </div>
+        <div class="nav_item" onclick="toggleBasket()">
+            <div class="icon_wrapper">
+                <img src="${cartIcon}" alt="Cart Icon">
+                ${amountInCircle}
+            </div>
+            <span>Cart</span>
+
+        </div>
+        `
 }
