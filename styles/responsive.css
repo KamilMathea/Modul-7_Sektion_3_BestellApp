@@ -175,6 +175,10 @@
         padding: 8px;
     }
 
+    .category_header {
+        padding: 4px 32px;
+    }
+
     .headline_and_reviews {
         gap: 16px;
     }
