@@ -195,6 +195,10 @@
 }
 
 @media (max-width: 375px) {
+    .headline_and_reviews {
+        flex-direction: column;
+    }
+
     .dishes_container {
         max-width: 280px;
     }
