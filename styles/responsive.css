@@ -46,6 +46,18 @@
 }
 
 @media (max-width: 768px) {
+    .main_dishes_container {
+        width: 100%;
+    }
+
+    .basket_wrapper {
+        display: none;
+    }
+
+    .show_basket {
+        display: block;
+    }
+
     .mobile_nav {
         display: flex !important;
         position: fixed;
