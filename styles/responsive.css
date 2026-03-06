@@ -123,3 +123,11 @@
         border: 1px solid #363534;
     }
 }
+
+@media (max-width: 550px) {
+        .dishes_container {
+        max-width: 350px;
+        margin: 16px auto;
+        padding: 12px;
+    }
+}
