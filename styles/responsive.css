@@ -101,7 +101,11 @@
     }
 
     footer {
-        padding-bottom: 100px;
+        padding-bottom: 80px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8px;
+        gap: 16px;
     }
 
     .icon_wrapper {
