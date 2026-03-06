@@ -109,3 +109,8 @@ function renderMobileNav() {
 
     mobileNav.innerHTML = getMobileNavTemplate(cartIcon, totalItems);
 }
+
+function toggleBasket() {
+    let basket = document.getElementById("basket_wrapper");
+    basket.classList.toggle('show_basket');
+}
