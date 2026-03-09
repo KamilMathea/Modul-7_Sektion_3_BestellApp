@@ -1,13 +1,13 @@
 .basket_wrapper {
     width: 350px;
-    flex-grow: 1;
+    min-width: 350px;
     border-left: 1px solid #E76C1F;
     padding: 16px;
     background-color: #363534;
 }
 
 .basket_sticky_container {
-    width: 100%;
+    position: sticky;
     height: 100vh;
     color: #FDEADC;
     position: sticky;
