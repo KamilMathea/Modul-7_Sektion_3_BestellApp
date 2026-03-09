@@ -135,7 +135,7 @@
         padding: 12px;
     }
 
-    .category_header img {
+    .category_header_content img {
         width: 50px;
         height: 50px;
     }
@@ -175,7 +175,7 @@
         padding: 8px;
     }
 
-    .category_header {
+    .category_header_content {
         padding: 4px 32px;
     }
 
