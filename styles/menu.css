@@ -6,22 +6,39 @@
     background-color: #E76C1F;
 }
 
-.category_header h2 {
+.category_header_full_width {
+    width: 100%;
+    background-color: #E76C1F;
+    display: flex;
+    justify-content: center;
+}
+
+.category_header_content {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    padding: 8px 64px;
+    gap: 32px;
+}
+
+.category_header_content h2 {
     color: white;
 }
 
-.category_header img {
+.category_header_content img {
     width: 80px;
     height: 80px;
 }
 
 .dishes_container {
+    max-width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 8px 16px;
     background-color: #FDEADC;
-    margin: 32px 56px;
+    margin: 32px auto;
     border-radius: 8px;
 }
 
