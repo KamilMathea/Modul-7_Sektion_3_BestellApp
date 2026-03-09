@@ -35,15 +35,20 @@ header {
 }
 
 main {
+    width: 100%;
+}
+
+.main_content_wrapper {
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
 }
 
 .main_dishes_container {
-    width: calc(100% - 358px);
+    width: auto;
+    flex-grow: 1;
 }
 
 .hero_image_container img {
@@ -61,6 +66,12 @@ main {
 .hero_logo_container img {
   width: 200px;
   height: auto;
+}
+
+.restaurant_header {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .restaurant_header_text {
