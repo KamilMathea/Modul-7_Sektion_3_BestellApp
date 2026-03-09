@@ -73,7 +73,7 @@ function changeAmount(i, change) {
         basketPrices.splice(i, 1);
     }
 
-    init();
+    renderCartContent();
 }
 
 function checkout() {
