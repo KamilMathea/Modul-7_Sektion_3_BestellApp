@@ -1,8 +1,10 @@
 function getHeadlineTemplate(i) {
     return `
-    <div class="category_header">
-        <img src="${myDishes[i].categoryImg}" alt="${myDishes[i].category}">
-        <h2>${myDishes[i].categoryHeadline}</h2>
+    <div class="category_header_full_width">
+        <div class="category_header_content">
+            <img src="${myDishes[i].categoryImg}" alt="${myDishes[i].category}">
+            <h2>${myDishes[i].categoryHeadline}</h2>
+        </div>
     </div>
     `;
 }
