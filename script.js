@@ -47,22 +47,28 @@ function renderCartContent() {
     if (basketNames.length === 0) {
         cartContent.innerHTML = "<p>Your basket is empty</p>";
         cartFooter.innerHTML = "";
-        return;
     }
     else {
         cartContent.innerHTML = "";
-        let totalPrice = 0;
 
         for (let i = 0; i < basketNames.length; i++) {
             let symbol = getMinusOrTrash(i);
             cartContent.innerHTML += getBasketItemTemplate(i, symbol);
-            totalPrice += basketPrices[i] * basketAmounts[i];
         }
 
-        cartFooter.innerHTML = getBasketTotalTemplate(totalPrice);
+        cartFooter.innerHTML = getBasketTotalTemplate(calculateTotalPrice());
     }
 
     renderMobileNav();
+}
+
+function calculateTotalPrice() {
+    let totalPrice = 0;
+
+    for (let i = 0; i < basketPrices.length; i++) {
+        totalPrice += basketPrices[i] * basketAmounts[i];
+    }
+    return totalPrice;
 }
 
 function getMinusOrTrash(i) {
