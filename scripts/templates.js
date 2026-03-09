@@ -25,9 +25,7 @@ function getDishTemplate(i, j) {
     `;
 }
 
-function getBasketItemTemplate(i) {
-    let minusOrTrash = basketAmounts[i] === 1 ?
-        '<img src="./assets/icons/deleteOrange.svg" alt="Delete-Button">' : '-';
+function getBasketItemTemplate(i, minusOrTrash) {
     return `
         <div class="cart_item">
             <div class="cart_item_info">

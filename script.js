@@ -54,7 +54,8 @@ function renderCartContent() {
         let totalPrice = 0;
 
         for (let i = 0; i < basketNames.length; i++) {
-            cartContent.innerHTML += getBasketItemTemplate(i);
+            let symbol = getMinusOrTrash(i);
+            cartContent.innerHTML += getBasketItemTemplate(i, symbol);
             totalPrice += basketPrices[i] * basketAmounts[i];
         }
 
@@ -62,6 +63,15 @@ function renderCartContent() {
     }
 
     renderMobileNav();
+}
+
+function getMinusOrTrash(i) {
+    if (basketAmounts[i] === 1) {
+        return '<img src="./assets/icons/deleteOrange.svg" alt="Delete-Button">';
+    } 
+    else {
+        return '-';
+    }
 }
 
 function changeAmount(i, change) {
