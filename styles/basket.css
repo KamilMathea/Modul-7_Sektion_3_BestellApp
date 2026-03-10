@@ -1,19 +1,23 @@
 .basket_wrapper {
     width: 350px;
     min-width: 350px;
-    border-left: 1px solid #E76C1F;
-    padding: 16px;
-    background-color: #363534;
+    padding: 0;
+    align-self: stretch;
 }
 
 .basket_sticky_container {
-    height: 100vh;
+    height: 650px;
+    width: 100%;
     color: #FDEADC;
     position: sticky;
-    top: 0;
+    top: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #363534;
+    border-left: 1px solid #E76C1F;
+    padding: 16px;
+    z-index: 10;
 }
 
 .basket_sticky_container h2 {
@@ -23,6 +27,7 @@
 }
 
 #basket_items {
+    flex-grow: 1;
     max-height: 400px;
     width: 100%;
     overflow-y: auto;
