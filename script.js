@@ -98,6 +98,7 @@ function checkout() {
     basketAmounts = [];
 
     renderCartContent();
+    toggleBasket();
 
     let successMessage = document.getElementById('order_success');
     successMessage.classList.remove('d-none');
