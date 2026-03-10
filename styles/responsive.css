@@ -58,8 +58,14 @@
         right: 0;
         bottom: 64px;
         width: 100%;
+        min-width: 0;
         overflow-y: auto;
         border: 1px solid #E76C1F;
+    }
+
+    .basket_sticky_container {
+        position: static;
+        height: auto;
     }
 
     .show_basket {
