@@ -198,6 +198,23 @@
     .dish_img_left img {
         height: 100px;
     }
+    
+    .basket_sticky_container h2 {
+        margin: 6px 0;
+    }
+
+    .cart_item {
+        padding: 12px;
+    }
+
+    .cart_total {
+        padding: 12px;
+    }
+
+    .checkout_button {
+        padding: 6px;
+        margin-top: 8px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -216,9 +233,5 @@
 
     .cart_item {
         width: 240px;
-    }
-
-    .checkout_button {
-        padding: 12px 12px;
     }
 }
