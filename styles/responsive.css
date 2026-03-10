@@ -50,7 +50,7 @@
         width: 100%;
     }
 
-    .basket_wrapper {
+    #basket_wrapper.basket_wrapper {
         display: none;
         position: fixed;
         top: 0;
@@ -58,20 +58,26 @@
         right: 0;
         bottom: 64px;
         width: 100%;
+        height: calc(100% - 64px);
         min-width: 0;
         overflow-y: auto;
-        border: 1px solid #E76C1F;
+        background-color: #363534;
+        z-index: 999;
+        border: none;
+    }
+
+    #basket_wrapper.show_basket {
+        display: flex !important;
+        flex-direction: column;
     }
 
     .basket_sticky_container {
         position: static;
         height: auto;
+        width: 100%;
+        background-color: transparent;
+        border-left: none;
     }
-
-    .show_basket {
-        display: block;
-    }
-
     .dishes_container {
         max-width: 500px;
         margin: 24px auto;
