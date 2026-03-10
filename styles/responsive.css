@@ -46,6 +46,12 @@
 }
 
 @media (max-width: 768px) {
+    .category_header_full_width::before,
+    .category_header_full_width::after {
+        content: none !important;
+        display: none !important;
+    }
+
     .main_dishes_container {
         width: 100%;
     }
@@ -78,6 +84,7 @@
         background-color: transparent;
         border-left: none;
     }
+
     .dishes_container {
         max-width: 500px;
         margin: 24px auto;
@@ -156,12 +163,12 @@
         height: 300px;
     }
 
-        .hero_logo_container {
+    .hero_logo_container {
         margin-top: -100px;
     }
 
     .hero_logo_container img {
-            width: 150px;
+        width: 150px;
     }
 }
 
@@ -204,7 +211,7 @@
     .dish_img_left img {
         height: 100px;
     }
-    
+
     .basket_sticky_container h2 {
         margin: 6px 0;
     }
