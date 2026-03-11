@@ -14,10 +14,6 @@
     .dishes_container {
         margin: 32px;
     }
-
-    .cart_item {
-        width: 250px;
-    }
 }
 
 @media (max-width: 924px) {
@@ -216,10 +212,6 @@
         margin: 6px 0;
     }
 
-    .cart_item {
-        padding: 12px;
-    }
-
     .cart_total {
         padding: 12px;
     }
@@ -242,9 +234,5 @@
     .dish_img_left img {
         width: 240px;
         height: 80px;
-    }
-
-    .cart_item {
-        width: 240px;
     }
 }
