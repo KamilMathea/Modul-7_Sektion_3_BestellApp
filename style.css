@@ -1,7 +1,8 @@
 html, body {
     max-width: 100%;
-    overflow-x: visible;
+    overflow-x: clip;
     position: relative;
+    margin: 0;
 }
 
 main, .main_content_wrapper {
@@ -69,6 +70,7 @@ main {
     flex-direction: row;
     align-items: stretch;
     min-height: 100%;
+    overflow: visible;
 }
 
 .main_dishes_container {
