@@ -89,6 +89,7 @@
 }
 
 .price_and_button button {
+    font-size: 16px;
     background-color: #E76C1F;
     color: white;
     border: none;
