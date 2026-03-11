@@ -21,11 +21,6 @@ header, footer {
     padding-right: 0;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 header {
     background-color: #E76C1F;
     padding: 10px 0;
