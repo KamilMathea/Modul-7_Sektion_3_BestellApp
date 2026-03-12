@@ -80,38 +80,6 @@ function getMinusOrTrash(i) {
     }
 }
 
-function changeAmount(i, change) {
-    basketAmounts[i] += change;
-
-    if (basketAmounts[i] <= 0) {
-        basketAmounts.splice(i, 1);
-        basketNames.splice(i, 1);
-        basketPrices.splice(i, 1);
-    }
-
-    renderCartContent();
-}
-
-function checkout() {
-    basketNames = [];
-    basketPrices = [];
-    basketAmounts = [];
-
-    renderCartContent();
-    toggleBasket();
-
-    let successMessage = document.getElementById('order_success');
-    successMessage.classList.remove('d-none');
-
-    setTimeout(function () {
-        successMessage.classList.add('d-none');
-    }, 3000);
-}
-
-function closeSuccessMessage() {
-    document.getElementById('order_success').classList.add('d-none');
-}
-
 function renderMobileNav() {
     let mobileNav = document.getElementById("mobile_nav");
     let totalItems = 0;
@@ -130,4 +98,54 @@ function renderMobileNav() {
 function toggleBasket() {
     let basket = document.getElementById("basket_wrapper");
     basket.classList.toggle('show_basket');
+}
+
+function checkout() {
+    basketNames = [];
+    basketPrices = [];
+    basketAmounts = [];
+
+    renderCartContent();
+    toggleBasket();
+
+    let successMessage = document.getElementById('order_success');
+    successMessage.classList.remove('d-none');
+
+    setTimeout(function () {
+        successMessage.classList.add('d-none');
+    }, 3000);
+}
+
+function changeAmount(i, change) {
+    basketAmounts[i] += change;
+
+    if (basketAmounts[i] <= 0) {
+        basketAmounts.splice(i, 1);
+        basketNames.splice(i, 1);
+        basketPrices.splice(i, 1);
+    
+    renderCartContent();
+    }
+    else {
+        updateOnlyBasketValues(i)
+    }
+}
+
+function updateOnlyBasketValues(i) {
+    document.getElementById(`basket-item-amount-${i}`).innerText = `${basketAmounts[i]} x ${basketNames[i]}`;
+    
+    let linePrice = (basketPrices[i] * basketAmounts[i]).toFixed(2);
+    document.getElementById(`basket-item-price-${i}`).innerText = `${linePrice} €`;
+    
+    document.getElementById(`minus-button-${i}`).innerHTML = getMinusOrTrash(i);
+    
+    let total = calculateTotalPrice().toFixed(2);
+    document.getElementById('final-total-price').innerText = `${total} €`;
+    document.getElementById('buy-button-text').innerText = `Buy now (${total} €)`;
+    
+    updateNavBadgeOnly();
+}
+
+function closeSuccessMessage() {
+    document.getElementById('order_success').classList.add('d-none');
 }
