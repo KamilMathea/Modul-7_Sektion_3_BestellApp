@@ -31,16 +31,16 @@ function getBasketItemTemplate(i, minusOrTrash) {
     return `
         <div class="cart_item">
             <div class="cart_item_info">
-                <span>${basketAmounts[i]} x ${basketNames[i]}</span>
+                <span id="basket-item-amount-${i}">${basketAmounts[i]} x ${basketNames[i]}</span>
                 <img src="./assets/icons/deleteBlack.svg" class="delete_all_icon" 
                 onclick="changeAmount(${i}, -${basketAmounts[i]})" alt="Delete-Button">
             </div>
             <div class="cart_item_actions">
             <div class="cart_item_change_amount">
-                <button onclick="changeAmount(${i}, -1)">${minusOrTrash}</button>
+                <button id="minus-button-${i}" onclick="changeAmount(${i}, -1)">${minusOrTrash}</button>
                 <button onclick="changeAmount(${i}, 1)">+</button>
             </div>
-                <span>${(basketPrices[i] * basketAmounts[i]).toFixed(2)} €</span>
+                <span id="basket-item-price-${i}">${(basketPrices[i] * basketAmounts[i]).toFixed(2)} €</span>
             </div>
         </div>
     `;
@@ -51,9 +51,9 @@ function getBasketTotalTemplate(totalPrice) {
     <hr>
         <div class="cart_total">
             <span>Total </span>
-            <span><strong>${totalPrice.toFixed(2)} €</strong></span>
+            <span><strong id="final-total-price">${totalPrice.toFixed(2)} €</strong></span>
         </div>
-        <button class="checkout_button" onclick="checkout()">Buy now (${totalPrice.toFixed(2)} €)</button>
+        <button id="buy-button-text" class="checkout_button" onclick="checkout()">Buy now (${totalPrice.toFixed(2)} €)</button>
     `;
 }
 
