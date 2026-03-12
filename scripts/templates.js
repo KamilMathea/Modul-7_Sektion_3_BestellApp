@@ -57,12 +57,7 @@ function getBasketTotalTemplate(totalPrice) {
     `;
 }
 
-function getMobileNavTemplate(cartIcon, totalItems) {
-    let amountInCircle = "";
-    if (totalItems > 0) {
-        amountInCircle = `<span class="mobile_cart_badge">${totalItems}</span>`;
-    }
-
+function getMobileNavTemplate(cartIcon, amountInCircle) {
     return `
         <div class="nav_item">
             <img src="./assets/icons/mobile_nav_home_white.svg" alt="Home Icon">
@@ -78,11 +73,10 @@ function getMobileNavTemplate(cartIcon, totalItems) {
         </div>
         <div class="nav_item" onclick="toggleBasket()">
             <div class="icon_wrapper">
-                <img src="${cartIcon}" alt="Cart Icon">
+                <img id="mobile-cart-icon-img" src="${cartIcon}" alt="Cart Icon">
                 ${amountInCircle}
             </div>
             <span>Cart</span>
-
         </div>
-        `
+        `;
 }

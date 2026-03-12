@@ -124,6 +124,7 @@
     }
 
     .icon_wrapper {
+        font-size: 16px;
         position: relative;
         display: flex;
         justify-content: center;
